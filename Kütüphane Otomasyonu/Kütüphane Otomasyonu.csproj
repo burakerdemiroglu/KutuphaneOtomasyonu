@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D009D26-7AD1-4A2D-9857-48F37EABBD2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kütüphane_Otomasyonu</RootNamespace>
+    <AssemblyName>Kütüphane Otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmEmanetKitapiade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmanetKitapiade.Designer.cs">
+      <DependentUpon>FrmEmanetKitapiade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.Designer.cs">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmanetKitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmanetKitap.Designer.cs">
+      <DependentUpon>FrmEmanetKitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmanetKitapListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmanetKitapListe.Designer.cs">
+      <DependentUpon>FrmEmanetKitapListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrafik.Designer.cs">
+      <DependentUpon>FrmGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKitapEkle.Designer.cs">
+      <DependentUpon>FrmKitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKitapListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKitapListeleme.Designer.cs">
+      <DependentUpon>FrmKitapListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiralama.Designer.cs">
+      <DependentUpon>FrmSiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUyeEkle.Designer.cs">
+      <DependentUpon>FrmUyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUyeListeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUyeListeme.Designer.cs">
+      <DependentUpon>FrmUyeListeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneOtomasyonuDataSet.cs">
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneOtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmEmanetKitapiade.resx">
+      <DependentUpon>FrmEmanetKitapiade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaSayfa.resx">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmanetKitap.resx">
+      <DependentUpon>FrmEmanetKitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmanetKitapListe.resx">
+      <DependentUpon>FrmEmanetKitapListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrafik.resx">
+      <DependentUpon>FrmGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKitapEkle.resx">
+      <DependentUpon>FrmKitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKitapListeleme.resx">
+      <DependentUpon>FrmKitapListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiralama.resx">
+      <DependentUpon>FrmSiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUyeEkle.resx">
+      <DependentUpon>FrmUyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUyeListeme.resx">
+      <DependentUpon>FrmUyeListeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="KutuphaneOtomasyonuDataSet.xsc">
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneOtomasyonuDataSet.xss">
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x162.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
