@@ -121,3 +121,68 @@ Bu proje, kütüphane işlemlerini yönetmek amacıyla geliştirilmiştir. Topla
 </p> 
 
 Bu şekilde, "Kütüphane Otomasyonu" projesinin farklı formlarda kullanıcı kaydı, kitap ekleme, kitap listeleme, emanet işlemleri, sıralama ve grafik gösterimi gibi işlevleri yerine getiren bir yapıya sahip olduğunu özetleyebiliriz. 
+
+## SQL Tabloları
+
+### Emanet Kitap Tablosu
+
+| Column Name   | Data Type      | Allow Nulls   |
+| ------------- | -------------- | ------------- |
+| TC            | nvarchar(50)   | [ ]           |
+| AdSoyad       | nvarchar(50)   | [ ]           |
+| Yas           | nvarchar(50)   | [ ]           |
+| Telefon       | nvarchar(50)   | [ ]           |
+| BarkodNo      | nvarchar(50)   | [ ]           |
+| KitapAdi      | nvarchar(50)   | [ ]           |
+| Yazari        | nvarchar(50)   | [ ]           |
+| YayinEvi      | nvarchar(50)   | [ ]           |
+| SayfaSayisi   | nvarchar(50)   | [ ]           |
+| KitapSayisi   | int            | [ ]           |
+| TeslimTarihi  | nchar(20)      | [ ]           |
+| iadeTarihi    | nchar(20)      | [ ]           |
+
+### Kitap Tablosu 
+
+| Column Name   | Data Type      | Allow Nulls   |
+| ------------- | -------------- | ------------- |
+| BarkodNo      | nvarchar(50)   | [ ]           |
+| KitapAdi      | nvarchar(50)   | [ ]           |
+| Yazari        | nvarchar(50)   | [ ]           |
+| Yayinevi      | nvarchar(50)   | [ ]           |
+| SayfaSayisi   | nvarchar(50)   | [ ]           |
+| Turu          | nvarchar(50)   | [ ]           |
+| StokSayisi    | int            | [ ]           |
+| RafNo         | nvarchar(50)   | [ ]           |
+| Aciklama      | nvarchar(50)   | [ ]           |
+| KayitTarihi   | nvarchar(50)   | [ ]           |
+
+
+### Sepet Tablosu 
+
+| Column Name   | Data Type      | Allow Nulls   |
+| ------------- | -------------- | ------------- |
+| BarkodNo      | nvarchar(50)   | [ ]           |
+| KitapAdi      | nvarchar(50)   | [ ]           |
+| Yazari        | nvarchar(50)   | [ ]           |
+| Yayinevi      | nvarchar(50)   | [ ]           |
+| SayfaSayisi   | nvarchar(50)   | [ ]           |
+| KitapSayisi   | int            | [ ]           |
+| TeslimTarihi  | nchar(20)      | [ ]           |
+| iadeTarihi    | nchar(20)      | [ ]           |
+
+### Uye Tablosu 
+
+| Column Name        | Data Type      | Allow Nulls   |
+| ------------------ | -------------- | ------------- |
+| TC                 | nvarchar(50)   | [ ]           |
+| AdSoyad            | nvarchar(50)   | [ ]           |
+| Yas                | nvarchar(50)   | [ ]           |
+| Cinsiyet           | nvarchar(50)   | [ ]           |
+| Telefon            | nvarchar(50)   | [ ]           |
+| Adres              | nvarchar(50)   | [ ]           |
+| Email              | nvarchar(50)   | [ ]           |
+| OkunanKitapSayisi  | int            | [ ]           |
+
+
+
+
